@@ -14,9 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ivm.crudapplication.dto.PersonDto;
 import com.ivm.crudapplication.service.PersonService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("/person")
+@CrossOrigin(origins = "http://localhost:8083")
 public class PersonController {
 
 	@Autowired
